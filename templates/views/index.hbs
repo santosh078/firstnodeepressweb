@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/weather.jpg" type="image/jpg">
+</head>
+<body>
+    <div class="search-container">
+        <!-- <form> -->
+          <input id="idSearch" type="text" placeholder="Search city" name="search">
+          <button id="idSubmit" type="submit" title="Submit"></button>
+        <!-- </form> -->
+      </div>
+      <div>
+        <h1> Weather Details :</h1>
+        <Label id="idCity"> </Label>
+        <Label id="idTemp"> </Label>
+        <!-- <h2> City : {{cityName}}</h2>
+        <h2> temperature : {{cityTemp}}</h2> -->
+        </div>
+      <script src="js/index.js"></script>
+</body>
+<footer>
+  {{>footer}}
+</footer>
+</html>
