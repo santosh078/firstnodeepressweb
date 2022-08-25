@@ -9,7 +9,9 @@
   "author": "thapa technical",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.17.1",
-    "hbs": "^4.1.1"
+    "hbs": "^4.1.1",
+    "mongoose": "^6.5.2"
   }
 }

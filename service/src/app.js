@@ -1,5 +1,8 @@
 const path = require('path');
+const dotenv= require("dotenv");
 const express = require('express');
+dotenv.config({path:"./config.env"});
+require("../../db/conn.js");
 const app = express();
 const hbs = require('hbs');
 const port = process.env.PORT || 8000;
