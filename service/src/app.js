@@ -1,15 +1,14 @@
 const path = require('path');
 const dotenv= require("dotenv");
 const express = require('express');
-dotenv.config({path:"./config.env"});
-require("../../db/conn.js");
+dotenv.config({path:"../config.env"});
 const app = express();
 const hbs = require('hbs');
 const port = process.env.PORT || 8000;
-
-const static_path = path.join(__dirname, "../public");
-const template_path = path.join(__dirname, "../templates/views");
-const partials_path = path.join(__dirname, "../templates/partials");
+require("../../db/conn.js");
+const static_path = path.join(__dirname, "../../public");
+const template_path = path.join(__dirname, "../../templates/views");
+const partials_path = path.join(__dirname, "../../templates/partials");
 
 app.set('view engine', 'hbs');
 app.set("views", template_path);
